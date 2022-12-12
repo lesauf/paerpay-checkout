@@ -40,7 +40,7 @@
     }
 
     #cardNumber {
-      width: 67%;
+      width: 65%;
     }
 
     #expirationDate {

@@ -21,7 +21,7 @@ export class PaymentMethod extends LitElement {
     }
 
     #cardNumber {
-      width: 67%;
+      width: 65%;
     }
 
     #expirationDate {
