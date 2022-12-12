@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.wide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+header {
+    min-height: 130px;
+    height: min-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("https://storage.googleapis.com/paerpay-demo.appspot.com/locations/sfFkf7dj/background.png?generation=1645559060605374") center center / cover no-repeat
+}
+
+#main {
+    margin: -50px auto 100px;
+    width: 90%;
+    max-width: 780px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: white;
+}
+
+hr {
+    width: 100%;
+}
+
+.items div {
+    padding: 6px;
+}
+
+.centered {
+    align-self: center
+}
+
+.wide {
+    margin: 10px 0;
+}
+
+.green-btn, .green-btn-full {
+    border-radius: 30px;
+    border: 2px solid green;
+    background-color: white;
+    padding: 12px 16px;
+    line-height: 20px;
+    height: 60px;
+    min-width: max(5rem, 25%);
+    color: green;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.green-btn-full {
+    background-color: green;
+    width: 70%;
+    margin-left: 3%;
+    color: white;
+}
+
+#powered-by {
+    width: 200px;
+}
+
+.action-buttons {
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    max-width: 780px;
+    margin: 0 auto 10px;
+    display: flex; 
+    justify-content: center;
+}

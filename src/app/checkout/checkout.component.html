@@ -1,0 +1,44 @@
+<header>
+
+</header>
+
+
+<div id="main">
+    <h2 class="text-center">Order Summary</h2>
+
+    <p class="text-center">Order # 72375</p>
+    <p class="text-center">12/12/2022, 7:37:19 AM</p>
+
+    <button type="button" class="centered green-btn">Invite more guests</button>
+
+    <hr>
+
+    <div class="wide items" *ngFor="let item of items">
+        <div>{{ item.name }}</div>
+        <div>{{ item.price | currency }}</div>
+    </div>
+
+    <hr>
+
+    <div class="wide">
+        <div>Subtotal</div>
+        <div>{{ subTotal | currency }}</div>
+    </div>
+
+    <div class="wide">
+        <div>Taxes</div>
+        <div>{{ tax | currency }}</div>
+    </div>
+
+    <div class="wide bold">
+        <div>Total</div>
+        <div>{{ total | currency }}</div>
+    </div>
+
+    <div class="wide action-buttons">
+        <button type="button" class="green-btn">Split</button>
+
+        <button type="button" class="green-btn-full" (click)="openPayment()">Pay
+            Balance</button>
+    </div>
+</div>
