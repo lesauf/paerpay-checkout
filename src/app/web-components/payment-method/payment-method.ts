@@ -5,8 +5,31 @@ import { Card } from '../../types/card.type';
 @customElement('payment-method')
 export class PaymentMethod extends LitElement {
   static override styles = css`
-    p {
-      color: blue;
+    h3 {
+      text-align: center;
+    }
+
+    div {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      padding: 0;
+    }
+
+    input {
+      border: none;
+      margin: 0;
+      height: 3em;
+    }
+
+    #cardNumber {
+      width: 67%;
+    }
+
+    #expirationDate {
+      width: 20%;
+    }
+
+    #cvc {
+      width: 10%;
     }
   `;
 
@@ -20,21 +43,26 @@ export class PaymentMethod extends LitElement {
   override render() {
     return html` <h3>Enter card details</h3>
       <div>
-        <input
+        <input 
+          id="cardNumber"
           @change=${this.handleEdit}
           type="text"
           name="cardNumber"
           placeholder="Card number"
         />
         <input
+          id="expirationDate"
           @change=${this.handleEdit}
           type="text"
+          width="20%"
           name="expirationDate"
           placeholder="MM/YY"
         />
         <input
+          id="cvc"
           @change=${this.handleEdit}
           type="text"
+          width="10%"
           name="cvc"
           placeholder="CVC"
         />
